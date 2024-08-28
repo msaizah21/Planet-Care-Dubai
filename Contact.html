@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Care</title>
+    <link rel="stylesheet" href="extend.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        height: 95vh;
+        margin: 20px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-container {
+        background-color: #5487ae;
+        flex: 0.4;
+    }
+
+    .left-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .right-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f9f9;
+    }
+
+    .contact-form {
+        width: 70%;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid black;
+        font-size: 14px;
+    }
+
+    select {
+        appearance: none;
+    }
+
+    .message-box {
+        resize: vertical;
+    }
+
+    .submit-button {
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .submit-button:hover {
+        background-color: #013964;
+    }
+</style>
+
+</head>
+<body>
+
+    <style>
+ 
+        .container-2 {
+            max-width:97%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container-2 h1{
+            color: #b18641;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .map-info-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 20px;
+        }
+        .map-container {
+            flex: 1;
+            position: relative;
+            height: 450px;
+            border-radius: 10px;
+            overflow: hidden;
+
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .info-box {
+            width: 55%;
+            background: #fffbfb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        
+        .info-box p {
+            margin: 0;
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .info-box p:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        
+        .info-box p:last-child {
+            color: #007bff;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .search-container input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+
+    <div class="banner">
+        <img src="Images/Rectangle 397.png" alt="Banner Image">
+        <div class="banner-text">
+            Celebrate sustainability with Planet Care, an eco-conscious oil and gas company. Get 22% off with code CARE22 →
+        </div>
+    </div>
+
+    <nav>
+        <div class="navbar-left">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Campaign.html">Campaign</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Logo image">
+        </div>
+        <div class="navbar-right">
+            <ul class="nav-links">
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li class="english"><a href="#">English</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <label class="hamburger">
+        <input type="checkbox">
+        <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+            <path class="line" d="M7 16 27 16"></path>
+        </svg>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Campaign</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">English</a></li>
+            </ul>
+        </nav>
+    </label>  
+
+<div class="container">
+    <div class="left-container">
+        <img src="Images/contact-banner.png" alt="banner-post">
+    </div>
+    
+    <div class="right-container">
+        <div class="contact-form">
+            <form action="https://formspree.io/f/xeqybarb" method="POST">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Support">Support</option>
+                        <option value="Feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your message:</label>
+                    <textarea id="message" name="message" class="message-box" rows="5"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="container-2">
+    <h1>FIND OUR OFFICE</h1>
+    <p style="text-align: center;">From seasonal cooling of local operations to powering big projects, our experts help businesses around the world improve production, manage power generation and plan for emergencies.</p>
+    <div class="search-container">
+        <input type="text" placeholder="Search">
+    </div>
+    <br>
+    <div class="map-info-container">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.313235755858!2d55.31685331500699!3d25.27686298387085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f595faeee3e95%3A0x3ca8ff5267602d2!2sKing%20Ali%20Obaid%20Bakhit%20in%20Rashid%20Al%20ketbi!5e0!3m2!1sen!2sae!4v1653893736807!5m2!1sen!2sae" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    <div class="info-box">
+        <h3>OUR LOCATION</h3>
+        <p>UAE Based Office, King Ali Obaid Bakhit in Rashid Al ketbi Office 302, Dubai</p>
+        <h3>OUR OFFICE TIMINGS</h3>
+        <p>Monday - Saturday (7 am to 4pm)<br>Only Sunday (1pm to 3pm)</p>
+       <h3>OUR SOCIALS</h3>
+      <p> <a href="https://www.linkedin.com/company/planet-care/?originalSubdomain=ae">LinkedIn Social Available </a> </p>
+   </div>
+    </div>
+</div>
+
+</section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Reach us</h3>
+                <p><i class="fas fa-phone"></i> +1012 3456 789</p>
+                <p><i class="fas fa-envelope"></i> theplanetcare@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 132 Dartmouth Street Boston, Massachusetts 02156 United States</p>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <p>About</p>
+                <p>Contact</p>
+                <p>Blogs</p>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <p>Privacy Policy</p>
+                <p>Terms & Services</p>
+                <p>Terms of Use</p>
+                <p>Refund Policy</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p>Recent Projects</p>
+                <p>Services</p>
+                <p>Forum</p>
+            </div>
+            
+            <div class="footer-section newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form action="https://formspree.io/f/xkndljpg" method="POST">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="Operation@planetcare.work" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p>* Will send you weekly updates for your better tool management.</p>
+            </div>
+            
+            
+            
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
